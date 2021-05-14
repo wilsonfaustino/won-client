@@ -52,6 +52,8 @@ export const Wrapper = styled.div<RibbonProps>`
       right: 0;
       border-style: solid;
       border-left-width: 0rem;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
     }
     ${!!color && wrapperModifiers.color(theme, color)}
     ${!!size && wrapperModifiers[size](theme)}
