@@ -4,6 +4,9 @@ import Checkbox, { CheckboxProps } from '.'
 export default {
   title: 'Checkbox',
   component: Checkbox,
+  argTypes: {
+    onCheck: { action: 'checked' }
+  },
   args: {
     label: 'Checkbox Text',
     labelFor: 'check'
@@ -16,7 +19,7 @@ export default {
 } as Meta
 
 export const WhiteOnDark: Story<CheckboxProps> = (args) => (
-  <Checkbox {...args} />
+  <Checkbox {...args} isChecked />
 )
 export const BlackOnLight: Story<CheckboxProps> = (args) => (
   <Checkbox {...args} labelColor="black" />
